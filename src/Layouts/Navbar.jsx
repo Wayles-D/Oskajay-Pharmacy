@@ -27,7 +27,7 @@ export function Navbar() {
               <a
                 key={item.name}
                 href={item.href}
-                className="relative text-gray-700 font-medium hover:text-[#9E1E8D] after:content-[''] after:block after:h-0.5 after:bg-[#9E1E8D] after:scale-x-0 after:origin-center after:transition-transform after:duration-700 hover:after:scale-x-100"
+                className="relative text-gray-700 poppins-regular font-medium hover:text-[#9E1E8D] after:content-[''] after:block after:h-0.5 after:bg-[#9E1E8D] after:scale-x-0 after:origin-center after:transition-transform after:duration-700 hover:after:scale-x-100"
               >
                 {item.name}
               </a>

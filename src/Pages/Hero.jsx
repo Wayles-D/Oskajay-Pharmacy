@@ -1,5 +1,6 @@
 import { Button } from '../Components/Ui/Button';
-import { ShoppingCart, Users, Award } from 'lucide-react';
+import { Search, ShoppingCart, Award } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export function HeroSection() {
   return (
@@ -21,11 +22,12 @@ export function HeroSection() {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
+              <a href="#services">
               <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white px-8 py-3">
-                <ShoppingCart className="mr-2 h-5 w-5" />
-                Explore Products
+                <Search className="mr-2 h-5 w-5" />
+                Explore Our Services
               </Button>
-              
+              </a>
             </div>
 
             {/* Trust Indicators */}
