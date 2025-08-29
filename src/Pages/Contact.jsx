@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet';
 import React from 'react'
 import { 
   Phone, 
@@ -16,6 +17,10 @@ useEffect(() => {
   }, []);
 
   return (
+    <>
+    <Helmet>
+        <title>Contact | OSKAJAY</title>
+      </Helmet>
     <section data-aos="fade-up" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12">
@@ -57,6 +62,6 @@ useEffect(() => {
           </div>
         </div>
       </section>
-
+    </>  
   )
 }

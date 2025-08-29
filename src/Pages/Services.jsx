@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import {
   Card,
   CardContent,
@@ -15,6 +16,7 @@ export default function Services() {
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
+
 
   const services = [
     {
@@ -49,6 +51,10 @@ export default function Services() {
     },
   ];
   return (
+    <>
+    <Helmet>
+        <title>Services | OSKAJAY</title>
+      </Helmet>
     <section data-aos="fade-up" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
@@ -81,5 +87,6 @@ export default function Services() {
         </div>
       </div>
     </section>
+    </>
   );
 }

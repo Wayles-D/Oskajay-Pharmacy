@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "animate.css";
@@ -10,6 +11,10 @@ export default function About() {
   }, []);
 
   return (
+    <>
+    <Helmet>
+      <title>About Us | OSKAJAY</title>
+    </Helmet>
       <section  className="py-20 bg-green-100">
         <div data-aos="fade-up" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -38,6 +43,6 @@ export default function About() {
           </div>
         </div>
       </section>
-
+</>
   );
 }
