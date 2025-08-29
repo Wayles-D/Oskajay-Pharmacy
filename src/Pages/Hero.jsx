@@ -1,3 +1,4 @@
+import React from 'react';
 import { Button } from '../Components/Ui/Button';
 import { Search, ShoppingCart, Award } from 'lucide-react';
 import { Link } from 'react-router-dom';
