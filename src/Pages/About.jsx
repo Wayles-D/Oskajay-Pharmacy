@@ -1,10 +1,17 @@
 import React from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import "animate.css";
+import { useEffect } from "react";
 
-export function AboutSection() {
+export default function About() {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
 
   return (
-      <section id="about" className="py-20 bg-green-100">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section  className="py-20 bg-green-100">
+        <div data-aos="fade-up" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <img

@@ -4,11 +4,19 @@ import {
   Mail, 
   MapPin, 
 } from 'lucide-react';
+import AOS from "aos";
+import "aos/dist/aos.css";
+import "animate.css";
+import { useEffect } from "react";
 
 
-export function ContactUs  () {
+export default function Contact() {
+useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
+
   return (
-    <section id="contact" className="py-20 bg-white">
+    <section data-aos="fade-up" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12">
             <div>

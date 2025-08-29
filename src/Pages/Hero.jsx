@@ -2,7 +2,7 @@ import { Button } from '../Components/Ui/Button';
 import { Search, ShoppingCart, Award } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
-export function HeroSection() {
+export default function Hero() {
   return (
     <section id="home" className="relative bg-gradient-to-br from-blue-50 to-green-50 py-20 lg:py-32">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -22,12 +22,12 @@ export function HeroSection() {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
-              <a href="#services">
+              <Link to={"/services"}>
               <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white px-8 py-3">
                 <Search className="mr-2 h-5 w-5" />
                 Explore Our Services
               </Button>
-              </a>
+              </Link>
             </div>
 
             {/* Trust Indicators */}
@@ -46,8 +46,8 @@ export function HeroSection() {
           </div>
 
           {/* Right Image */}
-          <div className="relative">
-            <div className="aspect-w-4 aspect-h-3 rounded-2xl overflow-hidden shadow-2xl">
+          <div className="relative animate__animated animate__slideInRight">
+            <div className="aspect-w-4 aspect-h-3 rounded-2xl overflow-hidden shadow-2xl ">
               <img
                 src="https://images.unsplash.com/photo-1576671081837-49000212a370?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
                 alt="Modern pharmacy interior with organized medication shelves"

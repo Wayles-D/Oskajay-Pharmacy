@@ -5,7 +5,7 @@ import { useInView } from 'motion/react'
 import { useRef } from 'react'
 import { Target, Eye } from 'lucide-react'
 
-export function MissionAndVision() {
+export default function MissionAndVision() {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: "-100px" })
 
