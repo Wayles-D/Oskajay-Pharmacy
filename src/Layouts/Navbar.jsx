@@ -13,13 +13,13 @@ export function Navbar() {
   ];
 
   return (
-    <header className="bg-white shadow-sm border-b border-gray-100 sticky top-0 z-50">
+    <header className="backdrop-blur-lg bg-white/50 shadow-sm border-b border-gray-50 fixed top-0 left-0 w-full pt-2 z-50 ">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/">
           <div className="flex items-center">
-            <img src="https://res.cloudinary.com/dmb5ggmvg/image/upload/v1756050333/Screenshot_2025-08-24_163342_kjlwnx_e_improve_e_sharpen_wx0hbc.png" alt="Brand-logo" className='w-16 h-10' />
+            <img src="https://res.cloudinary.com/dmb5ggmvg/image/upload/v1756050333/Screenshot_2025-08-24_163342_kjlwnx_e_improve_e_sharpen_wx0hbc.png" alt="Brand-logo" className='w-16 h-10 rounded-sm' />
           </div>
           </Link>
 

@@ -16,7 +16,7 @@ export default function Hero() {
               </h1>
               <p className="text-xl text-gray-600 leading-relaxed lora-normal">
                 Supplying Nigeria with affordable, quality medications and equipment. 
-                NAFDAC verified with 30+ years of excellence and nationwide delivery.
+                NAFDAC verified with 35 years of excellence and nationwide delivery.
               </p>
             </div>
 
